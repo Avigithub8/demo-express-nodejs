@@ -4,7 +4,7 @@
 //     host: 'localhost',
 //     user: 'root',
 //     database: 'node_complete',
-//     password:'root'
+//     password:'****'
 // });
 
 // module.exports = pool.promise();
