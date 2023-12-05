@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments</title>
+</head>
+<body>
+  <h1>Appointments</h1>
+  <ul>
+    <% users.forEach(user => { %>
+      <li>
+        <%= user.username %> - <%= user.phoneNumber %> - <%= user.email %>
+        <a href="/edit/<%= user.id %>"><button>Edit</button></a>
+        <a href="/delete/<%= user.id %>"><button>Delete</button></a>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/create">Add User</a>
+</body>
+</html>
+
+
+
